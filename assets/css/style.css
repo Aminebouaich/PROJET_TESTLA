@@ -1,0 +1,224 @@
+* {
+
+    margin: 0;
+    padding: 0;
+
+}
+
+a:link {
+    text-decoration: none;
+    box-shadow: none;
+}
+a:visited{
+    color: #393c41;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    right: 0;
+    background-color: white;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding-bottom: 20px;
+    margin-left: 15px;
+    text-decoration: none;
+    font-size: 25px;
+    display: block;
+    transition: 0.3s;
+    color: #393c41;
+    font-size: 1.2em;
+    border-bottom: solid rgba(128, 128, 128, 0.533) 0.02px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+#pastoi{
+    border: none;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    
+}
+
+
+body {
+    font-family: "Rubik", sans-serif;
+    color: #393c41;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+h2 {
+    font-weight: bolder;
+    font-size: 32px;
+    text-align: center;
+}
+
+
+ul {
+    gap: 12px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 5px;
+    height: 100%;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 7%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 1;
+
+}
+
+header img {
+    width: 100px;
+    height: 25px;
+    padding: 15px;
+}
+
+
+article {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 90%;
+
+    justify-content: space-between;
+    height: 100vh;
+    background-image: url(../../assets/img/model-s.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.models2{
+    background-image: url(../../assets/img/model-3.jpg);
+}
+.models3{
+    background-image: url(../../assets/img/model-x.jpg);
+}
+.models4{
+    background-image: url(../../assets/img/model-y.jpg);
+}
+.models5{
+    background-image: url(../../assets/img/solar-panel.jpg);
+}
+.models6{
+    background-image: url(../../assets/img/solar-roof.jpg);
+}
+.models7{
+    background-image: url(../../assets/img/accessories.jpg);
+}
+.haut {
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 12px;
+    width: 100%;
+    padding-top: 15%;
+}
+
+.btn {
+    height: 20%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 400px;
+    
+}
+
+button {
+    padding: 10px;
+    width: 100%;
+}
+
+.icone {
+    height: 50px;
+    width: 50px;
+    animation:icone 1s infinite linear alternate ;
+}
+@keyframes icone{
+    0% {position:relative; top:0px; opacity: 0}
+    50% {position:relative; top:10px; opacity: 0.5}
+    100% {position:relative; top:18px; opacity: 1}
+}
+
+
+.custom {
+    color: white;
+    border-radius: 2em;
+    background-color: rgba(23, 26, 32, 0.818);
+    border: none;
+    width: 256px;
+    font-size: 12px;
+    height: 40px;
+}
+
+.existing {
+    color: black;
+    border-radius: 2em;
+    background-color: rgba(209, 210, 213, 0.937);
+    border: none;
+    width: 256px;
+    font-size: 12px;
+    height: 40px;
+}
+
+#navmodel{
+    display: none;
+}
+
+
+/* RESPONSIVE */
+
+@media screen and (min-width:760px){
+    #navmodel{
+        display: flex;
+    }
+    .btn{ 
+        flex-direction: row;
+        margin-top: 500px;
+    }
+
+
+}
+@media screen and (min-width:992px){
+    .haut{
+        padding-top: 9%;
+    }
+
+}
+
