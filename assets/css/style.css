@@ -4,7 +4,31 @@
     padding: 0;
 
 }
+/* transition javascript */
 
+
+[class*="reveal-"]{
+    opacity: 0;
+    transform: translateY(30px)
+}
+
+.reveal-visible {
+    opacity: 1;
+    transform: translateY(0);
+    transition: 1s cubic-bezier(.5, 0, 0, 1);
+}
+.reveal-2{
+    transition-delay: .1s;
+}
+.reveal-3{
+    transition-delay: .2s;
+}
+.reveal-4{
+    transition-delay: .3s;
+}
+.reveal-5{
+    transition-delay: .4s;
+}
 a:link {
     text-decoration: none;
     box-shadow: none;
@@ -25,7 +49,9 @@ a:visited{
     transition: 0.5s;
     padding-top: 60px;
 }
-
+#s{
+    margin: 0;
+}
 .sidenav a {
     padding-bottom: 20px;
     margin-left: 15px;
@@ -55,7 +81,6 @@ a:visited{
     margin-left: 50px;
     
 }
-
 
 body {
     font-family: "Rubik", sans-serif;
@@ -112,7 +137,6 @@ article {
     justify-content: center;
     flex-direction: column;
     height: 90%;
-
     justify-content: space-between;
     height: 100vh;
     background-image: url(../../assets/img/model-s.jpg);
