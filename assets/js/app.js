@@ -1,4 +1,4 @@
-
+// slide nav
 function openNav() {
     document.getElementById("mySidenav").style.width = "250px";
   }
@@ -7,6 +7,7 @@ function openNav() {
     document.getElementById("mySidenav").style.width = "0";
   }
 
+  // transition vertical
   const ratio =.1
   const options = {
     root: null,
