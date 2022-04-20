@@ -4,12 +4,12 @@
     padding: 0;
 
 }
-/* transition javascriiipt */
+/* transition javascript */
 
 
 [class*="reveal-"]{
     opacity: 0;
-    transform: translateY(30px)
+    transform: translateY(30px);
 }
 
 .reveal-visible {
@@ -29,10 +29,12 @@
 .reveal-5{
     transition-delay: .4s;
 }
+/* fin transition */
 a:link {
     text-decoration: none;
     box-shadow: none;
 }
+
 a:visited{
     color: #393c41;
 }
